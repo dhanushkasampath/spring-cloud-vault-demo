@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: spring-cloud-vault-demo
+  cloud:
+    vault:
+      uri: http://127.0.0.1:8200
+      token: 00000000-0000-0000-0000-000000000000  # This should be the same token which we start our vault server
+      schema: http
+      kv:
+        enabled: true
+  profiles:
+    active: vault
+
+# Below is the command we used to start the vault server
+# vault server --dev --dev-root-token-id="00000000-0000-0000-0000-000000000000"
+
+
+# Below is the command we used to get data by application name
+# vault kv get secret/spring-cloud-vault-demo

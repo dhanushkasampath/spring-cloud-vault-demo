@@ -74,7 +74,7 @@ in this vault server, we can
 -----------------
 
 use below command to write
-vault kv put secret/spring-vault-config-example my.username-dhanushka my.password=abc@123
+vault kv put secret/spring-vault-config-example my.username=dhanushka my.password=abc@123
 
 2.2. read secret
 ----------------
